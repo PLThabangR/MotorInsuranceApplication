@@ -1,0 +1,62 @@
+# docker-compose.yml
+# Defines the local development infrastructure for the Motor Insurance application.
+# We run PostgreSQL and Redis in containers so every developer on the team
+# gets the exact same versions and configuration. This file is committed to Git.
+
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: motorinsurance-postgres
+    restart: unless-stopped
+    environment:
+      # These values are for LOCAL DEVELOPMENT ONLY.
+      # Never commit production secrets. Real secrets will come from
+      # environment variables or a secret store (later ticket).
+      POSTGRES_USER: motorinsurance
+      POSTGRES_PASSWORD: motorinsurance_dev_password
+      POSTGRES_DB: motorinsurance
+    ports:
+      # host:container — maps PostgreSQL's default port to the host machine
+      # so we can connect with pgAdmin, DBeaver, or psql from the host.
+      - "5432:5432"
+    volumes:
+      # Named volume ensures data survives `docker compose down` and restarts.
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - motorinsurance-network
+    healthcheck:
+      # Healthcheck lets dependent services (and CI) wait until Postgres is ready.
+      test: ["CMD-SHELL", "pg_isready -U motorinsurance -d motorinsurance"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: motorinsurance-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redisdata:/data
+    networks:
+      - motorinsurance-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  # Named volumes are managed by Docker and persist across container recreations.
+  # They live outside the container filesystem so data is not lost on `down`.
+  pgdata:
+  redisdata:
+
+networks:
+  # A private network so containers can reach each other by service name
+  # (e.g., the API container will connect to "postgres" and "redis" by name).
+  motorinsurance-network:
+    driver: bridge
