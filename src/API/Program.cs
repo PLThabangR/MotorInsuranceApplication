@@ -2,6 +2,8 @@
 // In Clean Architecture, this is where we wire up dependency injection,
 // middleware, and the HTTP pipeline. It must not contain business logic.
 
+using Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // --- Service registration (DI container) ---
@@ -13,6 +15,9 @@ builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+//Register all Infrastructire services (DB Context,connect string)
+builder.Services.AddInfrastructure(builder.Configuration);
 
 var app = builder.Build();
 

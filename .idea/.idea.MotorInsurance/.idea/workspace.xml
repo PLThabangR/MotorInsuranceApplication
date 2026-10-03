@@ -18,7 +18,23 @@
     <configurations />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90d63c96-1d10-48db-9372-c635d6c83a8c" name="Changes" comment="" />
+    <list default="true" id="90d63c96-1d10-48db-9372-c635d6c83a8c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Migrations/20261003133733_InitialCreate.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Migrations/20261003133733_InitialCreate.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/DependencyInjection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/ClaimConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/ClaimConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/DriverConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/DriverConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/PolicyConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/PolicyConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/PolicyHolderConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/PolicyHolderConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/TelematicsConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/TelematicsConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/VehicleConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/VehicleConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/VehicleDriverConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/VehicleDriverConfiguration.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,61 +91,61 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.4822794268867878" />
-      <entry key="MS500" value="2.9257209897394567" />
-      <entry key="S2" value="5.156775526429298" />
-      <entry key="S5" value="6.813025451685981" />
-      <entry key="S10" value="7.741973870765952" />
-      <entry key="S30" value="8.536322116751482" />
-      <entry key="S60" value="8.762045094678548" />
-      <entry key="M2" value="8.880378750052493" />
-      <entry key="M5" value="9.934271995875099" />
-      <entry key="M10" value="19.88404235925449" />
-      <entry key="M15" value="33.73466191300563" />
-      <entry key="M30" value="67.8380358657463" />
-      <entry key="H1" value="108.40132313787166" />
-      <entry key="H2" value="147.4426926409297" />
-      <entry key="H4" value="177.09621307479853" />
-      <entry key="D1" value="210.18991914018986" />
-      <entry key="W1" value="216.85655887128672" />
+      <entry key="MS100" value="1.4356225648015184" />
+      <entry key="MS500" value="2.2727929559215316" />
+      <entry key="S2" value="5.849682922760875" />
+      <entry key="S5" value="10.31551261368902" />
+      <entry key="S10" value="13.917489156433302" />
+      <entry key="S30" value="18.022259907831902" />
+      <entry key="S60" value="19.411337572310277" />
+      <entry key="M2" value="20.180344162712412" />
+      <entry key="M5" value="21.309284182021212" />
+      <entry key="M10" value="26.08586517512698" />
+      <entry key="M15" value="32.45430118314911" />
+      <entry key="M30" value="52.901916688521425" />
+      <entry key="H1" value="85.10812542450684" />
+      <entry key="H2" value="118.1426796480469" />
+      <entry key="H4" value="147.89004843342659" />
+      <entry key="D1" value="351.93486920160984" />
+      <entry key="W1" value="510.2458934904084" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="8.202464954162383E-269" />
-      <entry key="S10" value="9.05674607938759E-135" />
-      <entry key="S30" value="2.085092217998562E-45" />
-      <entry key="S60" value="4.6459370174417986E-23" />
-      <entry key="M2" value="7.653360123167461E-12" />
-      <entry key="M5" value="4.9282562356923805E-5" />
-      <entry key="M10" value="0.010037160612861253" />
-      <entry key="M15" value="0.06238340731899697" />
-      <entry key="M30" value="0.4335415989639308" />
-      <entry key="H1" value="1.2521795845027535" />
-      <entry key="H2" value="2.2058304913059423" />
-      <entry key="H4" value="2.9590767890801355" />
-      <entry key="D1" value="3.801946700138497" />
-      <entry key="W1" value="3.971033569435881" />
+      <entry key="S2" value="3.3232595254447007E-242" />
+      <entry key="S5" value="2.562274789358745E-97" />
+      <entry key="S10" value="5.062066880468689E-49" />
+      <entry key="S30" value="8.494827285961979E-17" />
+      <entry key="S60" value="1.2921843328750718E-8" />
+      <entry key="M2" value="2.213716530741737E-4" />
+      <entry key="M5" value="0.13328078896735357" />
+      <entry key="M10" value="1.6134291791723028" />
+      <entry key="M15" value="4.25261036746314" />
+      <entry key="M30" value="14.042253413736033" />
+      <entry key="H1" value="29.943918833740845" />
+      <entry key="H2" value="46.16359966446185" />
+      <entry key="H4" value="58.35179461136896" />
+      <entry key="D1" value="77.05953989632998" />
+      <entry key="W1" value="84.44145087820738" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.4187051256903958" />
-      <entry key="MS500" value="2.891795388442943" />
-      <entry key="S2" value="5.135008661475735" />
-      <entry key="S5" value="6.80128897282572" />
-      <entry key="S10" value="7.735382467571842" />
-      <entry key="S30" value="8.533933651475136" />
-      <entry key="S60" value="8.76082465338428" />
-      <entry key="M2" value="8.879761739004046" />
-      <entry key="M5" value="9.934037169199788" />
-      <entry key="M10" value="19.893665172480542" />
-      <entry key="M15" value="33.79634958694691" />
-      <entry key="M30" value="68.27014026299503" />
-      <entry key="H1" value="109.65158324428181" />
-      <entry key="H2" value="149.64682142984162" />
-      <entry key="H4" value="180.05413368173558" />
-      <entry key="D1" value="213.9916145505219" />
-      <entry key="W1" value="220.82755483738967" />
+      <entry key="MS100" value="1.3809292692094586" />
+      <entry key="MS500" value="2.2543887076403166" />
+      <entry key="S2" value="5.837323374033308" />
+      <entry key="S5" value="10.306199815992407" />
+      <entry key="S10" value="13.911057504357588" />
+      <entry key="S30" value="18.019443704402043" />
+      <entry key="S60" value="19.40981574315145" />
+      <entry key="M2" value="20.17976765066119" />
+      <entry key="M5" value="21.440591242884363" />
+      <entry key="M10" value="27.68911154844694" />
+      <entry key="M15" value="36.689048911900066" />
+      <entry key="M30" value="66.91250068234851" />
+      <entry key="H1" value="115.01551312856152" />
+      <entry key="H2" value="164.27673625346097" />
+      <entry key="H4" value="206.2226425471803" />
+      <entry key="D1" value="428.9898565994734" />
+      <entry key="W1" value="594.6866054591154" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -147,32 +163,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.API: http.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/thbanngr/Documents/TR Software/MotorInsuranceApplication/src/API/API.csproj&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;SolutionBuilderGeneralOptionsPage&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.API: http.executor": "Run",
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "cidr.known.project.marker": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "feature/ticket-003-efcore-postgres",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/home/thbanngr/Documents/TR Software/MotorInsuranceApplication/src/API/API.csproj",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "SolutionBuilderGeneralOptionsPage",
+    "to.speed.mode.migration.done": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.API: http">
     <configuration name="API" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -368,7 +384,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="hore: initialize MotorInsurance solution with clean architecture skeleton&#10;&#10;- Add .NET 8 solution with Domain, Application, Infrastructure, API projects&#10;- Enforce Clean Architecture dependency direction&#10;- Add .gitignore, README, and docker-compose for PostgreSQL 16 and Redis 7&#10;- Configure API composition root with controllers and Swagger" />
     <MESSAGE value=" Clean Architecture project, Infrastructure often hosts more than just persistence: external API clients, email senders, file storage, etc." />
-    <option name="LAST_COMMIT_MESSAGE" value=" Clean Architecture project, Infrastructure often hosts more than just persistence: external API clients, email senders, file storage, etc." />
+    <MESSAGE value="Creating infrasture file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating infrasture file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

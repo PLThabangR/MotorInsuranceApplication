@@ -12,7 +12,7 @@ services:
     restart: unless-stopped
     environment:
       # These values are for LOCAL DEVELOPMENT ONLY.
-      # Never commit production secrets. Real secrets will come from
+      # Not to be committed production secrets. Real secrets will come from
       # environment variables or a secret store (later ticket).
       POSTGRES_USER: motorinsurance
       POSTGRES_PASSWORD: motorinsurance_dev_password
