@@ -19,11 +19,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90d63c96-1d10-48db-9372-c635d6c83a8c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/API/API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/API.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Infrastructure.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/ApplicationDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/DesignTimeDbContextFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/DesignTimeDbContextFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/ValueGenerators/SequentialGuidValueGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/ValueGenerators/SequentialGuidValueGenerator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Migrations/20261003133733_InitialCreate.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Migrations/20261003133733_InitialCreate.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/DependencyInjection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/ClaimConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/ClaimConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/DriverConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/DriverConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/PolicyConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/PolicyConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/PolicyHolderConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/PolicyHolderConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/TelematicsConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/TelematicsConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/VehicleConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/VehicleConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/VehicleDriverConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/VehicleDriverConfiguration.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,61 +91,61 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="1.0134925320525554E-218" />
-      <entry key="S5" value="6.399910904747536E-88" />
-      <entry key="S10" value="2.756196633141826E-44" />
-      <entry key="S30" value="4.2655964810220454E-15" />
-      <entry key="S60" value="9.067735602962689E-8" />
-      <entry key="M2" value="4.2772481318473926E-4" />
-      <entry key="M5" value="0.08107861536110814" />
-      <entry key="M10" value="1.2146922787198233" />
-      <entry key="M15" value="5.646346571682502" />
-      <entry key="M30" value="35.96584791816243" />
-      <entry key="H1" value="103.40660579307747" />
-      <entry key="H2" value="186.69813578649047" />
-      <entry key="H4" value="257.58215882336435" />
-      <entry key="D1" value="342.96333361756575" />
-      <entry key="W1" value="360.8996896719588" />
+      <entry key="MS100" value="1.4356225648015184" />
+      <entry key="MS500" value="2.2727929559215316" />
+      <entry key="S2" value="5.849682922760875" />
+      <entry key="S5" value="10.31551261368902" />
+      <entry key="S10" value="13.917489156433302" />
+      <entry key="S30" value="18.022259907831902" />
+      <entry key="S60" value="19.411337572310277" />
+      <entry key="M2" value="20.180344162712412" />
+      <entry key="M5" value="21.309284182021212" />
+      <entry key="M10" value="26.08586517512698" />
+      <entry key="M15" value="32.45430118314911" />
+      <entry key="M30" value="52.901916688521425" />
+      <entry key="H1" value="85.10812542450684" />
+      <entry key="H2" value="118.1426796480469" />
+      <entry key="H4" value="147.89004843342659" />
+      <entry key="D1" value="351.93486920160984" />
+      <entry key="W1" value="510.2458934904084" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.000000000000068" />
-      <entry key="S60" value="1.0000004379673255" />
-      <entry key="M2" value="1.0012749146402886" />
-      <entry key="M5" value="1.1836632692016718" />
-      <entry key="M10" value="2.0314247877144744" />
-      <entry key="M15" value="2.869565178301775" />
-      <entry key="M30" value="4.550984713643457" />
-      <entry key="H1" value="6.365353148743097" />
-      <entry key="H2" value="8.202722233962898" />
-      <entry key="H4" value="9.720457837803274" />
-      <entry key="D1" value="11.54838234333661" />
-      <entry key="W1" value="11.933408035085813" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="3.3232595254447007E-242" />
+      <entry key="S5" value="2.562274789358745E-97" />
+      <entry key="S10" value="5.062066880468689E-49" />
+      <entry key="S30" value="8.494827285961979E-17" />
+      <entry key="S60" value="1.2921843328750718E-8" />
+      <entry key="M2" value="2.213716530741737E-4" />
+      <entry key="M5" value="0.13328078896735357" />
+      <entry key="M10" value="1.6134291791723028" />
+      <entry key="M15" value="4.25261036746314" />
+      <entry key="M30" value="14.042253413736033" />
+      <entry key="H1" value="29.943918833740845" />
+      <entry key="H2" value="46.16359966446185" />
+      <entry key="H4" value="58.35179461136896" />
+      <entry key="D1" value="77.05953989632998" />
+      <entry key="W1" value="84.44145087820738" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="6.084190112169893E-13" />
-      <entry key="MS500" value="0.0036044628619288995" />
-      <entry key="S2" value="0.24502485383546765" />
-      <entry key="S5" value="0.5697496348552569" />
-      <entry key="S10" value="0.754817616948132" />
-      <entry key="S30" value="0.9105015216204935" />
-      <entry key="S60" value="0.9542025015558921" />
-      <entry key="M2" value="0.978421069308126" />
-      <entry key="M5" value="1.2482518487730092" />
-      <entry key="M10" value="3.2213520632797956" />
-      <entry key="M15" value="8.488747914768481" />
-      <entry key="M30" value="40.49323812611973" />
-      <entry key="H1" value="109.75559486889608" />
-      <entry key="H2" value="194.89072277561291" />
-      <entry key="H4" value="267.29680702787823" />
-      <entry key="D1" value="354.51060443621134" />
-      <entry key="W1" value="372.83293467033036" />
+      <entry key="MS100" value="1.3809292692094586" />
+      <entry key="MS500" value="2.2543887076403166" />
+      <entry key="S2" value="5.837323374033308" />
+      <entry key="S5" value="10.306199815992407" />
+      <entry key="S10" value="13.911057504357588" />
+      <entry key="S30" value="18.019443704402043" />
+      <entry key="S60" value="19.40981574315145" />
+      <entry key="M2" value="20.17976765066119" />
+      <entry key="M5" value="21.440591242884363" />
+      <entry key="M10" value="27.68911154844694" />
+      <entry key="M15" value="36.689048911900066" />
+      <entry key="M30" value="66.91250068234851" />
+      <entry key="H1" value="115.01551312856152" />
+      <entry key="H2" value="164.27673625346097" />
+      <entry key="H4" value="206.2226425471803" />
+      <entry key="D1" value="428.9898565994734" />
+      <entry key="W1" value="594.6866054591154" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -374,7 +384,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="hore: initialize MotorInsurance solution with clean architecture skeleton&#10;&#10;- Add .NET 8 solution with Domain, Application, Infrastructure, API projects&#10;- Enforce Clean Architecture dependency direction&#10;- Add .gitignore, README, and docker-compose for PostgreSQL 16 and Redis 7&#10;- Configure API composition root with controllers and Swagger" />
     <MESSAGE value=" Clean Architecture project, Infrastructure often hosts more than just persistence: external API clients, email senders, file storage, etc." />
-    <option name="LAST_COMMIT_MESSAGE" value=" Clean Architecture project, Infrastructure often hosts more than just persistence: external API clients, email senders, file storage, etc." />
+    <MESSAGE value="Creating infrasture file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating infrasture file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
