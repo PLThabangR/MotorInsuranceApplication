@@ -19,21 +19,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90d63c96-1d10-48db-9372-c635d6c83a8c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Migrations/20261003133733_InitialCreate.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Migrations/20261003133733_InitialCreate.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/DependencyInjection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/ClaimConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/ClaimConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/DriverConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/DriverConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/PolicyConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/PolicyConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/PolicyHolderConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/PolicyHolderConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/TelematicsConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/TelematicsConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/VehicleConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/VehicleConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/VehicleDriverConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/VehicleDriverConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/Common/Authorization/Roles.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Infrastructure.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,18 +48,16 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/Application/Class1.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Domain/Class1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Application/Common/Authorization/Roles.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Domain/Common/BaseEntity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Domain/Entities/Claim.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Domain/Entities/Driver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Domain/Entities/Policy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Domain/Entities/PolicyHolder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Domain/Entities/Telemantics.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Domain/Entities/Vehicle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Domain/Entities/VehicleDriver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Domain/Enums/ClaimStatus.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Domain/Enums/PolicyStatus.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Infrastructure/Class1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Infrastructure/DependencyInjection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Infrastructure/Persistence/ApplicationDbContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/ClaimConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
@@ -91,61 +77,61 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.4356225648015184" />
-      <entry key="MS500" value="2.2727929559215316" />
-      <entry key="S2" value="5.849682922760875" />
-      <entry key="S5" value="10.31551261368902" />
-      <entry key="S10" value="13.917489156433302" />
-      <entry key="S30" value="18.022259907831902" />
-      <entry key="S60" value="19.411337572310277" />
-      <entry key="M2" value="20.180344162712412" />
-      <entry key="M5" value="21.309284182021212" />
-      <entry key="M10" value="26.08586517512698" />
-      <entry key="M15" value="32.45430118314911" />
-      <entry key="M30" value="52.901916688521425" />
-      <entry key="H1" value="85.10812542450684" />
-      <entry key="H2" value="118.1426796480469" />
-      <entry key="H4" value="147.89004843342659" />
-      <entry key="D1" value="351.93486920160984" />
-      <entry key="W1" value="510.2458934904084" />
+      <entry key="MS100" value="1.6098708235722239" />
+      <entry key="MS500" value="3.3735503852739814" />
+      <entry key="S2" value="5.0297482298791145" />
+      <entry key="S5" value="5.58145561300605" />
+      <entry key="S10" value="5.885705151197101" />
+      <entry key="S30" value="6.660494825395691" />
+      <entry key="S60" value="7.187862854679693" />
+      <entry key="M2" value="8.078107702423463" />
+      <entry key="M5" value="14.222498473058659" />
+      <entry key="M10" value="23.703454562797415" />
+      <entry key="M15" value="29.594509190822638" />
+      <entry key="M30" value="37.953452019011586" />
+      <entry key="H1" value="43.41621411589679" />
+      <entry key="H2" value="46.61224386174183" />
+      <entry key="H4" value="51.62583416053837" />
+      <entry key="D1" value="240.18819381707019" />
+      <entry key="W1" value="523.8949430639292" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="3.3232595254447007E-242" />
-      <entry key="S5" value="2.562274789358745E-97" />
-      <entry key="S10" value="5.062066880468689E-49" />
-      <entry key="S30" value="8.494827285961979E-17" />
-      <entry key="S60" value="1.2921843328750718E-8" />
-      <entry key="M2" value="2.213716530741737E-4" />
-      <entry key="M5" value="0.13328078896735357" />
-      <entry key="M10" value="1.6134291791723028" />
-      <entry key="M15" value="4.25261036746314" />
-      <entry key="M30" value="14.042253413736033" />
-      <entry key="H1" value="29.943918833740845" />
-      <entry key="H2" value="46.16359966446185" />
-      <entry key="H4" value="58.35179461136896" />
-      <entry key="D1" value="77.05953989632998" />
-      <entry key="W1" value="84.44145087820738" />
+      <entry key="MS100" value="1.1009311438696458E-129" />
+      <entry key="MS500" value="1.61566765809669E-26" />
+      <entry key="S2" value="3.5652337400721103E-7" />
+      <entry key="S5" value="0.002635331196538083" />
+      <entry key="S10" value="0.05133547697829957" />
+      <entry key="S30" value="0.37173376742098707" />
+      <entry key="S60" value="0.6186394700529845" />
+      <entry key="M2" value="0.8848265414413578" />
+      <entry key="M5" value="1.4509304702251848" />
+      <entry key="M10" value="1.970576446774366" />
+      <entry key="M15" value="2.2360282165894807" />
+      <entry key="M30" value="2.5718516476317466" />
+      <entry key="H1" value="2.7727581577333704" />
+      <entry key="H2" value="2.9044067546747594" />
+      <entry key="H4" value="4.201422351040498" />
+      <entry key="D1" value="43.65906404694728" />
+      <entry key="W1" value="80.07187111458069" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.3809292692094586" />
-      <entry key="MS500" value="2.2543887076403166" />
-      <entry key="S2" value="5.837323374033308" />
-      <entry key="S5" value="10.306199815992407" />
-      <entry key="S10" value="13.911057504357588" />
-      <entry key="S30" value="18.019443704402043" />
-      <entry key="S60" value="19.40981574315145" />
-      <entry key="M2" value="20.17976765066119" />
-      <entry key="M5" value="21.440591242884363" />
-      <entry key="M10" value="27.68911154844694" />
-      <entry key="M15" value="36.689048911900066" />
-      <entry key="M30" value="66.91250068234851" />
-      <entry key="H1" value="115.01551312856152" />
-      <entry key="H2" value="164.27673625346097" />
-      <entry key="H4" value="206.2226425471803" />
-      <entry key="D1" value="428.9898565994734" />
-      <entry key="W1" value="594.6866054591154" />
+      <entry key="MS100" value="1.4968355330679413" />
+      <entry key="MS500" value="3.298662124774926" />
+      <entry key="S2" value="5.003558277707037" />
+      <entry key="S5" value="5.569968353297285" />
+      <entry key="S10" value="5.902802239536103" />
+      <entry key="S30" value="6.956985214516851" />
+      <entry key="S60" value="7.743918852194739" />
+      <entry key="M2" value="8.92054229187592" />
+      <entry key="M5" value="15.646486711288402" />
+      <entry key="M10" value="25.654917234317196" />
+      <entry key="M15" value="31.8157116751629" />
+      <entry key="M30" value="40.516518668924135" />
+      <entry key="H1" value="46.18415761168704" />
+      <entry key="H2" value="49.514112217570954" />
+      <entry key="H4" value="55.825548331462926" />
+      <entry key="D1" value="283.84463500040744" />
+      <entry key="W1" value="603.9661081462662" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -177,7 +163,7 @@
     "cidr.known.project.marker": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "feature/ticket-003-efcore-postgres",
+    "git-widget-placeholder": "master",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "/home/thbanngr/Documents/TR Software/MotorInsuranceApplication/src/API/API.csproj",
     "node.js.detected.package.eslint": "true",
